@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		FA89F87D202D2FC7005B61CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89F87C202D2FC7005B61CA /* AppDelegate.swift */; };
-		FA89F87F202D2FC7005B61CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89F87E202D2FC7005B61CA /* ViewController.swift */; };
 		FA89F882202D2FC7005B61CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA89F880202D2FC7005B61CA /* Main.storyboard */; };
 		FA89F884202D2FC7005B61CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA89F883202D2FC7005B61CA /* Assets.xcassets */; };
 		FA89F887202D2FC7005B61CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA89F885202D2FC7005B61CA /* LaunchScreen.storyboard */; };
+		FA89F890202D3704005B61CA /* MainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89F88F202D3704005B61CA /* MainCollectionViewController.swift */; };
+		FA89F893202D3753005B61CA /* MainHeaderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA89F892202D3753005B61CA /* MainHeaderCollectionViewCell.xib */; };
+		FA89F895202D3898005B61CA /* MainHeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89F894202D3898005B61CA /* MainHeaderCollectionViewCell.swift */; };
+		FA89F897202D3B44005B61CA /* MainMenuCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA89F896202D3B44005B61CA /* MainMenuCollectionViewCell.xib */; };
+		FA89F899202D3BA5005B61CA /* MainMenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89F898202D3BA5005B61CA /* MainMenuCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FA89F879202D2FC7005B61CA /* poc-collectionview-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "poc-collectionview-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA89F87C202D2FC7005B61CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FA89F87E202D2FC7005B61CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FA89F881202D2FC7005B61CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA89F883202D2FC7005B61CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA89F886202D2FC7005B61CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA89F888202D2FC7005B61CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA89F88F202D3704005B61CA /* MainCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewController.swift; sourceTree = "<group>"; };
+		FA89F892202D3753005B61CA /* MainHeaderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainHeaderCollectionViewCell.xib; sourceTree = "<group>"; };
+		FA89F894202D3898005B61CA /* MainHeaderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHeaderCollectionViewCell.swift; sourceTree = "<group>"; };
+		FA89F896202D3B44005B61CA /* MainMenuCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenuCollectionViewCell.xib; sourceTree = "<group>"; };
+		FA89F898202D3BA5005B61CA /* MainMenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,34 @@
 		FA89F87B202D2FC7005B61CA /* poc-collectionview-swift */ = {
 			isa = PBXGroup;
 			children = (
+				FA89F891202D3720005B61CA /* views */,
+				FA89F88E202D36DE005B61CA /* controllers */,
 				FA89F87C202D2FC7005B61CA /* AppDelegate.swift */,
-				FA89F87E202D2FC7005B61CA /* ViewController.swift */,
 				FA89F880202D2FC7005B61CA /* Main.storyboard */,
 				FA89F883202D2FC7005B61CA /* Assets.xcassets */,
 				FA89F885202D2FC7005B61CA /* LaunchScreen.storyboard */,
 				FA89F888202D2FC7005B61CA /* Info.plist */,
 			);
 			path = "poc-collectionview-swift";
+			sourceTree = "<group>";
+		};
+		FA89F88E202D36DE005B61CA /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA89F88F202D3704005B61CA /* MainCollectionViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		FA89F891202D3720005B61CA /* views */ = {
+			isa = PBXGroup;
+			children = (
+				FA89F892202D3753005B61CA /* MainHeaderCollectionViewCell.xib */,
+				FA89F894202D3898005B61CA /* MainHeaderCollectionViewCell.swift */,
+				FA89F896202D3B44005B61CA /* MainMenuCollectionViewCell.xib */,
+				FA89F898202D3BA5005B61CA /* MainMenuCollectionViewCell.swift */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,7 +151,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA89F897202D3B44005B61CA /* MainMenuCollectionViewCell.xib in Resources */,
 				FA89F887202D2FC7005B61CA /* LaunchScreen.storyboard in Resources */,
+				FA89F893202D3753005B61CA /* MainHeaderCollectionViewCell.xib in Resources */,
 				FA89F884202D2FC7005B61CA /* Assets.xcassets in Resources */,
 				FA89F882202D2FC7005B61CA /* Main.storyboard in Resources */,
 			);
@@ -136,8 +166,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA89F87F202D2FC7005B61CA /* ViewController.swift in Sources */,
+				FA89F899202D3BA5005B61CA /* MainMenuCollectionViewCell.swift in Sources */,
+				FA89F895202D3898005B61CA /* MainHeaderCollectionViewCell.swift in Sources */,
 				FA89F87D202D2FC7005B61CA /* AppDelegate.swift in Sources */,
+				FA89F890202D3704005B61CA /* MainCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,12 +306,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4A723W25N6;
 				INFOPLIST_FILE = "poc-collectionview-swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ryam.poc-collectionview-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -289,12 +323,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4A723W25N6;
 				INFOPLIST_FILE = "poc-collectionview-swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ryam.poc-collectionview-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
